@@ -1,6 +1,11 @@
 .user-component {
   justify-content: space-between;
 }
+.chat {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
 .user-component,
 .user-component_column:first-child {
   display: flex;
@@ -19,7 +24,7 @@
 .user-component_subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray-color);
 }
 .user-component_avatar--xl {
   width: 80px;
@@ -34,5 +39,12 @@
   font-weight: 400;
 }
 .user-component_column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-component_time {
+  margin-bottom: 10px;
+  display: block;
 }
