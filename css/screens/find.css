@@ -1,17 +1,6 @@
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-}
-.find-icons_icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.find-icons_icon i {
-  font-size: 35px;
-}
-.find-icons_icon span {
-  margin-top: 18px;
+.find-cog_dot {
+  left: 75px;
+  bottom: 20px;
 }
 .recommended-friends {
   margin: 25px 0px;
@@ -98,4 +87,22 @@
 }
 .open-post_heart-count span {
   margin-left: 3px;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post_heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
