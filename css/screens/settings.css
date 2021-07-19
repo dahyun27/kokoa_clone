@@ -14,3 +14,7 @@
 .settings_setting-column:last-child {
   opacity: 0.5;
 }
+.alt-header__settings {
+  position: unset;
+  background-color: white;
+}
